@@ -126,10 +126,3 @@ jobs:
           workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/*.img
           workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/*.zip
         name: ${{ github.event.inputs.DEVICE_NAME }}
-
-    - name: Uploading Build
-         run:
-              cd ${BuildPath}/out/target/product/${CODENAME}/
-              curl -sL https://git.io/file-transfer | sh
-              ./transfer wet *.img
-              ./transfer wet **.img
