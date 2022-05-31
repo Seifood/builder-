@@ -18,23 +18,23 @@ on:
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/YuKongA/device_xiaomi_rubens-TWRP.git'
+        default: 'https://github.com/Seifood/device_xiaomi_zeus-TWRP.git'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
-        default: 'twrp-12'
+        default: 'android-12'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/xiaomi/rubens'
+        default: 'device/xiaomi/zeus'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'rubens'
+        default: 'zeus'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'vendorbootimage'
+        default: 'recoveryimage'
         type: choice
         options:
         - recoveryimage
