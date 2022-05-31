@@ -120,8 +120,7 @@ jobs:
         make ${{ github.event.inputs.BUILD_TARGET }} -j$(nproc --all)
 
     - name: Uploading Build
-         run: |
-              cd ${BuildPath}/out/target/product/${CODENAME}/
+         run: | cd ${BuildPath}/out/target/product/${CODENAME}/
               curl -sL https://git.io/file-transfer | sh
               ./transfer wet *.img
               ./transfer wet **.img
