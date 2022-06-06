@@ -103,7 +103,7 @@ jobs:
       run: |
         cd ${GITHUB_WORKSPACE}/workspace
         source build/envsetup.sh
-        repopick 5078
+        repopick 5405
 
     - name: Clone Device Tree
       run: |
