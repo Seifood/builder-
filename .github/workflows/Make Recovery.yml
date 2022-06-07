@@ -18,23 +18,23 @@ on:
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/Seifood/nabu8'
+        default: 'https://github.com/Seifood/device_xiaomi_zeus-TWRP'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
-        default: '11'
+        default: 'usb'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/xiaomi/nabu'
+        default: 'device/xiaomi/zeus'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'nabu'
+        default: 'zeus'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'bootimage'
+        default: 'recoveryimage'
         type: choice
         options:
         - recoveryimage
@@ -103,7 +103,7 @@ jobs:
       run: |
         cd ${GITHUB_WORKSPACE}/workspace
         source build/envsetup.sh
-        repopick 5078
+        repopick 5405
 
     - name: Clone Device Tree
       run: |
