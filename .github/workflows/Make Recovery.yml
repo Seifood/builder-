@@ -18,23 +18,23 @@ on:
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/Seifood/device_xiaomi_zeus-TWRP.git'
+        default: 'https://github.com/Seifood/nabu8'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
-        default: 'usb'
+        default: '11'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/xiaomi/zeus'
+        default: 'device/xiaomi/nabu'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'zeus'
+        default: 'nabu'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'recoveryimage'
+        default: 'bootimage'
         type: choice
         options:
         - recoveryimage
