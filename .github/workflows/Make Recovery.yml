@@ -18,19 +18,19 @@ on:
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/Seifood/device_xiaomi_zeus-TWRP'
+        default: 'https://github.com/Seifood/lance'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
-        default: 'android-12'
+        default: 'android-12.1'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/xiaomi/zeus'
+        default: 'device/xiaomi/lancelot'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'zeus'
+        default: 'lancelot'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
@@ -105,6 +105,7 @@ jobs:
         source build/envsetup.sh
         repopick 5405
         repopick 5540
+        repopick 5653
     - name: Clone Device Tree
       run: |
         cd ${GITHUB_WORKSPACE}/workspace
