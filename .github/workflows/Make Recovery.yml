@@ -18,7 +18,7 @@ on:
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/Seifood/device_xiaomi_gauguin'
+        default: 'https://github.com/Seifood/device_xiaomi_gauguin-TWRP'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
